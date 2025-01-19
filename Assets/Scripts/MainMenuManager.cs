@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -48,6 +49,7 @@ public class MainMenuManager : MonoBehaviour
     {
         ShowToast("Starting game...");
         // Add your game start logic here
+        SceneManager.LoadScene("GameScene");
     }
 
     public void OnSettingsClicked()
